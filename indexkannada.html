@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIRBUZZ - ಭಾರತದ ನಂಬಿಕೆಯ ವೇದಿಕೆ</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      background: url('background.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      text-align: center;
+    }
+    header img.logo-main {
+      height: 60px;
+    }
+
+    .brand-text {
+      color: #ffcc00;
+      font-weight: bold;
+    }
+
+    .language-tabs {
+      display:flex;
+      justify-content:center;
+      gap:15px;
+      padding:8px 0;
+      background:#000;
+    }
+    .language-tabs a {
+      color:#000;
+      background: #ffcc00;
+      text-decoration:none;
+      font-size:14px;
+      border:1px solid #444;
+      padding:5px 10px;
+      border-radius:4px;
+      font-weight:bold;
+      transition: background 0.3s, color 0.3s;
+    }
+    .language-tabs a:hover { background:#ff2b2b; color:#fff; }
+
+    nav {
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      padding:10px;
+      background:#111;
+    }
+    nav a {
+      color:#fff;
+      text-decoration:none;
+      font-size:16px;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #ffcc00; }
+
+    .hero {
+      background: rgba(0, 0, 0, 0.75);
+      padding:100px 20px;
+      text-align:center;
+    }
+    .hero h2 {
+      font-size:32px;
+      color:#fff;
+      margin-bottom:10px;
+    }
+    .hero p {
+      font-size:18px;
+      color:#fffae6;
+      margin:8px 0;
+    }
+
+    .cta-buttons a, .register-btn {
+      display:inline-block;
+      padding:12px 20px;
+      background:#ffcc00;
+      color:#000;
+      border-radius:5px;
+      margin:5px;
+      text-decoration:none;
+      font-weight:bold;
+      transition: all 0.3s ease;
+    }
+    .cta-buttons a:hover, .register-btn:hover {
+      background:#fff;
+      color:#000;
+      transform: scale(1.05);
+    }
+
+    .section {
+      padding:30px 20px;
+      text-align:center;
+      background: rgba(24, 24, 24, 0.85);
+      margin-top: 10px;
+    }
+    .section h3 {
+      font-size:24px;
+      color:#ffcc00;
+      margin-bottom:15px;
+    }
+    .section p {
+      font-size:17px;
+      color:#fff;
+      margin-bottom:10px;
+      max-width:900px;
+      margin:auto;
+      line-height:1.6;
+    }
+
+    .features {
+      text-align:left;
+      color:#ffe;
+      margin-top:15px;
+      max-width:900px;
+      margin:auto;
+    }
+    .features li {
+      margin-bottom:8px;
+    }
+
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: #fff;
+      border-radius: 50%;
+      font-size: 22px;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      z-index: 999;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% {transform: scale(1);}
+      50% {transform: scale(1.1);}
+      100% {transform: scale(1);}
+    }
+
+    footer {
+      background:#000;
+      padding:10px;
+      text-align:center;
+      color:#bbb;
+      font-size:14px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="AIRBUZZ Logo" class="logo-main">
+</header>
+
+<div class="language-tabs">
+  <a href="#">English</a>
+  <a href="#">हिन्दी</a>
+  <a href="#">ಕನ್ನಡ</a>
+  <a href="#">తెలుగు</a>
+</div>
+
+<nav>
+  <a href="#">ಮುಖಪುಟ</a>
+  <a href="#">ನಮ್ಮ ಬಗ್ಗೆ</a>
+  <a href="#">ಆಫರ್‌ಗಳು</a>
+  <a href="#">ಸಂಪರ್ಕಿಸಿ</a>
+</nav>
+
+<section class="hero">
+  <h2><span class="brand-text">AIRBUZZ</span> – ಭಾರತದ ನಂಬಿಕೆಯಾಗಿರುವ ಪ್ಲಾಟ್‌ಫಾರ್ಮ್</h2>
+  <p>ಭಾರತದ ಸಾವಿರಾರು ಬಳಕೆದಾರರೊಂದಿಗೆ ಸೇರಿ <span class="brand-text">AIRBUZZ</span> ನಲ್ಲಿ ಆಟವಾಡಿ, ಕ್ರಿಕೆಟ್ ಪ್ರಿಡಿಕ್ಷನ್ ಮಾಡಿ ಮತ್ತು ಭರ್ಜರಿ ಜಯ ಗಳಿಸಿ.</p>
+  <p>ಸುಲಭವಾದ ಲಾಗಿನ್‌ಗಾಗಿ ವೇಗದ ಮತ್ತು ಸುರಕ್ಷಿತ ಅನುಭವ.</p>
+  <p>ನಿಮ್ಮ <strong>www.<span class="brand-text">airbuzz.in</span></strong> ID ತೆಗೆದುಕೊಂಡು ಇಂದು ಆರಂಭಿಸಿ!</p>
+  <div class="cta-buttons">
+    <a href="https://www.airbuzz.in" target="_blank">ಇಂದೇ ನೋಂದಾಯಿಸಿ</a>
+    <a href="https://wa.me/+919582897268" target="_blank">WhatsApp ನಲ್ಲಿ ಸಂಪರ್ಕಿಸಿ</a>
+  </div>
+</section>
+
+<section class="section">
+  <h3><span class="brand-text">AIRBUZZ</span> ಬಗ್ಗೆ</h3>
+  <p><span class="brand-text">AIRBUZZ</span> ಆನ್‌ಲೈನ್ ಗೇಮಿಂಗ್‌ನಲ್ಲಿ ಮೊತ್ತಮೊದಲ ಸ್ಥಾನದಲ್ಲಿದ್ದು, ಕ್ರಿಕೆಟ್ ಪ್ರಿಡಿಕ್ಷನ್, ಸ್ಲಾಟ್ ಗೇಮ್ಸ್ ಮತ್ತು ಕಲರ್ ಪ್ರಿಡಿಕ್ಷನ್ ಆಟಗಳ ಅನುಭವವನ್ನು ನೀಡುತ್ತದೆ.</p>
+</section>
+
+<section class="section">
+  <h3><span class="brand-text">AIRBUZZ</span> ನಲ್ಲಿ ಲಭ್ಯವಿರುವ ಆಟಗಳು</h3>
+  <ul class="features">
+    <li>🎰 ಸ್ಲಾಟ್ ಗೇಮ್ಸ್</li>
+    <li>🎲 ರೂಲೆಟ್</li>
+    <li>♠️ ಪೊಕರ್</li>
+    <li>🃏 ಬ್ಲ್ಯಾಕ್‌ಜ್ಯಾಕ್</li>
+    <li>♥️ ಬಾಕರಾಟ್</li>
+    <li>🎥 ನೈಜ ಡೀಲರ್‌ಗಳೊಂದಿಗೆ ಲೈವ್ ಕ್ಯಾಸಿನೋ</li>
+  </ul>
+  <div style="margin-top:20px;">
+    <a class="register-btn" href="https://www.airbuzz.in" target="_blank">ಇಂದೇ ನೋಂದಾಯಿಸಿ</a>
+  </div>
+</section>
+
+<section class="section">
+  <h3>ಬೋನಸ್ ಮತ್ತು ಬಹುಮಾನಗಳು</h3>
+  <p>ನಿಯಮಿತ ಆಟಗಾರರಿಗೆ ಲಾಯಲ್ಟಿ ಬೋನಸ್</p>
+  <p>ನಿಮ್ಮ ಸ್ನೇಹಿತರನ್ನು ಆಹ್ವಾನಿಸಿ ಮತ್ತು ರೆಫರಲ್ ಬೋನಸ್ ಗಳಿಸಿ!</p>
+  <div style="margin-top:20px;">
+    <a class="register-btn" href="https://www.airbuzz.in" target="_blank">ಇಂದೇ ನೋಂದಾಯಿಸಿ</a>
+  </div>
+</section>
+
+<section class="section">
+  <h3>ಪಾವತಿ ವಿಧಾನಗಳು</h3>
+  <ul class="features">
+    <li>🏦 ನೆಟ್ ಬ್ಯಾಂಕಿಂಗ್</li>
+    <li>📲 UPI ಪಾವತಿ</li>
+    <li>💳 ನೇರ ಬ್ಯಾಂಕ್ ವರ್ಗಾವಣೆಗಳು</li>
+  </ul>
+  <div style="margin-top:20px;">
+    <a class="register-btn" href="https://www.airbuzz.in" target="_blank">ಇಂದೇ ನೋಂದಾಯಿಸಿ</a>
+  </div>
+</section>
+
+<section class="section">
+  <h3><span class="brand-text">AIRBUZZ</span> ಸಂಪರ್ಕಿಸಿ – ನಾವು 24/7 ಲಭ್ಯವಿದ್ದೇವೆ</h3>
+  <p>ಯಾವುದೇ ಪ್ರಶ್ನೆ ಇದೆಯಾ? ಸಹಾಯ ಬೇಕಾ? ನಮ್ಮ ಬೆಂಬಲ ತಂಡವು ನಿಮಗೆ ದಿನಂಪ್ರತಿ 24 ಗಂಟೆ ಲಭ್ಯವಿದೆ – ಲಾಗಿನ್, ಠೇವಣಿ, ಹಣ ಹಿಂಪಡೆದುಕೊಳ್ಳುವಿಕೆ, ಆಟಗಳ ಪ್ರಾಪ್ತಿ ಮತ್ತಿತರ ಸಹಾಯಕ್ಕಾಗಿ.</p>
+  <p>ಸಂಪರ್ಕಿಸಲು ತಡಮಾಡಬೇಡಿ – ನಾವು ನಿಮಗೆ ಅತ್ಯುತ್ತಮ ಗೇಮಿಂಗ್ ಅನುಭವ ನೀಡಲು ಬದ್ಧರಾಗಿದ್ದೇವೆ.</p>
+  <div style="margin-top:20px;">
+    <a class="register-btn" href="https://www.airbuzz.in" target="_blank">ಇಂದೇ ನೋಂದಾಯಿಸಿ</a>
+  </div>
+</section>
+
+<section class="section" style="background:#0a0a0a; border-top:2px solid #ffcc00;">
+  <h3 style="color:#ffcc00;">ಜವಾಬ್ದಾರಿ ನಿರಾಕರಣೆ</h3>
+  <p style="color:#ff9999; font-size:16px;">
+    ಈ ವೆಬ್‌ಸೈಟ್ ಅನ್ನು <strong>18+</strong> ಉಪಯೋಗದಾರರಿಗಾಗಿ ಮಾತ್ರ ಹೊಂದಿಸಲಾಗಿದೆ. ನೀವು 
+    <strong>ತೆಲಂಗಾಣ, ಒಡಿಶಾ, ಅಸ್ಸಾಂ, ಸಿಕ್ಕಿಂ,</strong> ಅಥವಾ <strong>ನಾಗಾಲ್ಯಾಂಡ್</strong> ನವರು ಆದರೆ ದಯವಿಟ್ಟು ತಕ್ಷಣವೇ ತ್ಯಜಿಸಿ.
+  </p>
+  <p style="color:#eee;">ಮೋಸಗಾರರ ಬಗ್ಗೆ ಎಚ್ಚರಿಕೆ – ನಾವು ಕೇವಲ WhatsApp ಮುಖಾಂತರ ವ್ಯವಹರಿಸುತ್ತೇವೆ.</p>
+  <p style="color:#0ff;"><strong>ನಾವು ಕೇವಲ ಫ್ಯಾಂಟಸಿ ಕ್ರೀಡೆಗಳನ್ನು ಪ್ರೋತ್ಸಾಹಿಸುತ್ತೇವೆ. ಯಾವುದೇ ನಗದು ಹಣದ ವ್ಯವಹಾರವಿಲ್ಲ.</strong></p>
+</section>
+
+<a class="floating-whatsapp" href="https://wa.me/+919582897268" target="_blank">💬</a>
+
+<footer>
+  © 2025 <span class="brand-text">AIRBUZZ</span>. ಎಲ್ಲಾ ಹಕ್ಕುಗಳನ್ನು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ.
+</footer>
+
+</body>
+</html>
