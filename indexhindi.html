@@ -2,252 +2,176 @@
 <html lang="hi">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AIRBUZZ - भारत का भरोसेमंद प्लेटफ़ॉर्म</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AIRBUZZ – भारत का भरोसेमंद गेमिंग प्लेटफ़ॉर्म</title>
   <style>
-    * { margin:0; padding:0; box-sizing:border-box; }
     body {
-      background: url('background.png') no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
+      background-color: #0e0e0e;
+      color: white;
+      margin: 0;
+      padding: 0;
     }
 
     header {
-      background: rgba(0, 0, 0, 0.6);
+      background-color: #1c1c1c;
       padding: 20px;
       text-align: center;
-    }
-    header img.logo-main {
-      height: 60px;
+      border-bottom: 2px solid #333;
     }
 
-    .brand-text {
-      color: #ffcc00;
-      font-weight: bold;
+    header h1 {
+      margin: 0;
+      color: #facc15;
     }
-
-    .language-tabs {
-      display:flex;
-      justify-content:center;
-      gap:15px;
-      padding:8px 0;
-      background:#000;
-    }
-    .language-tabs a {
-      color:#000;
-      background: #ffcc00;
-      text-decoration:none;
-      font-size:14px;
-      border:1px solid #444;
-      padding:5px 10px;
-      border-radius:4px;
-      font-weight:bold;
-      transition: background 0.3s, color 0.3s;
-    }
-    .language-tabs a:hover { background:#ff2b2b; color:#fff; }
-
-    nav {
-      display:flex;
-      justify-content:center;
-      gap:20px;
-      padding:10px;
-      background:#111;
-    }
-    nav a {
-      color:#fff;
-      text-decoration:none;
-      font-size:16px;
-      transition: color 0.3s;
-    }
-    nav a:hover { color: #ffcc00; }
 
     .hero {
-      background: rgba(0, 0, 0, 0.75);
-      padding:100px 20px;
-      text-align:center;
+      padding: 40px 20px;
+      text-align: center;
+      background: linear-gradient(to right, #111, #222);
     }
+
     .hero h2 {
-      font-size:32px;
-      color:#fff;
-      margin-bottom:10px;
+      font-size: 2em;
+      color: #facc15;
     }
+
     .hero p {
-      font-size:18px;
-      color:#fffae6;
-      margin:8px 0;
+      font-size: 1.1em;
+      margin: 15px auto;
+      max-width: 700px;
+    }
+
+    .cta-buttons {
+      margin-top: 25px;
     }
 
     .cta-buttons a {
-      display:inline-block;
-      padding:12px 20px;
-      background:#ffcc00;
-      color:#000;
-      border-radius:5px;
-      margin:5px;
-      text-decoration:none;
-      font-weight:bold;
-      transition: all 0.3s ease;
-    }
-    .cta-buttons a:hover {
-      background:#fff;
-      color:#000;
-      transform: scale(1.05);
+      text-decoration: none;
+      background-color: #facc15;
+      color: #000;
+      padding: 14px 28px;
+      font-weight: bold;
+      border-radius: 30px;
+      transition: 0.3s;
+      display: inline-block;
+      margin: 10px;
     }
 
-    .section {
-      padding:30px 20px;
-      text-align:center;
-      background: rgba(24, 24, 24, 0.85);
-      margin-top: 10px;
-    }
-    .section h3 {
-      font-size:24px;
-      color:#ffcc00;
-      margin-bottom:15px;
-    }
-    .section p {
-      font-size:17px;
-      color:#fff;
-      margin-bottom:10px;
-      max-width:900px;
-      margin-left:auto;
-      margin-right:auto;
-      line-height:1.6;
+    .cta-buttons a:hover {
+      background-color: #e0b814;
     }
 
     .features {
-      text-align:left;
-      color:#ffe;
-      margin-top:15px;
-      max-width:900px;
-      margin:auto;
-    }
-    .features li {
-      margin-bottom:8px;
+      background-color: #181818;
+      padding: 40px 20px;
+      text-align: center;
     }
 
-    .floating-whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25d366;
-      color: #fff;
-      border-radius: 50%;
-      font-size: 22px;
-      width: 50px;
-      height: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
-      z-index: 999;
-      animation: pulse 2s infinite;
+    .features h3 {
+      color: #facc15;
+      font-size: 1.5em;
     }
-    @keyframes pulse {
-      0% {transform: scale(1);}
-      50% {transform: scale(1.1);}
-      100% {transform: scale(1);}
+
+    .features ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+
+    .features li {
+      margin: 15px 0;
+      font-size: 1.1em;
     }
 
     footer {
-      background:#000;
-      padding:10px;
-      text-align:center;
-      color:#bbb;
-      font-size:14px;
-      margin-top: 20px;
+      background-color: #1c1c1c;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    .brand-text {
+      color: #facc15;
+      font-weight: bold;
+    }
+
+    /* Floating WhatsApp Button */
+    .floating-whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+      transition: background-color 0.3s ease;
+    }
+
+    .floating-whatsapp-btn:hover {
+      background-color: #1ebd5a;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 1.5em;
+      }
+
+      .cta-buttons a {
+        padding: 10px 20px;
+        font-size: 0.9em;
+      }
+
+      .floating-whatsapp-btn {
+        padding: 10px 16px;
+        font-size: 0.9em;
+        bottom: 15px;
+        right: 15px;
+      }
     }
   </style>
 </head>
 <body>
 
-<header>
-  <img src="logo.png" alt="AIRBUZZ Logo" class="logo-main">
-</header>
+  <header>
+    <h1>स्वागत है <span class="brand-text">AIRBUZZ</span> में</h1>
+  </header>
 
-<div class="language-tabs">
-  <a href="index.html">English</a>
-  <a href="indexhindi.html">हिन्दी</a>
-  <a href="indexkannada.html">ಕನ್ನಡ</a>
-  <a href="indextelugu.html">తెలుగు</a>
-</div>
+  <section class="hero">
+    <h2><span class="brand-text">AIRBUZZ</span> – भारत का सबसे भरोसेमंद गेमिंग प्लेटफ़ॉर्म</h2>
+    <p>हजारों उपयोगकर्ताओं के साथ जुड़ें जो <span class="brand-text">AIRBUZZ</span> पर स्लॉट्स, क्रिकेट प्रिडिक्शन, और कसीनो गेम्स का आनंद ले रहे हैं।</p>
+    <p>तेज़ और सुरक्षित गेमप्ले के साथ आसान <span class="brand-text">AIRBUZZ</span> लॉगिन एक्सेस पाएं।</p>
+    <p>अब अपना <strong>www.<span class="brand-text">airbuzz.in</span></strong> आईडी पाएं और जीतना शुरू करें।</p>
+    <div class="cta-buttons">
+      <a href="https://wa.me/+919582897268" target="_blank">व्हाट्सएप पर जुड़ें</a>
+    </div>
+  </section>
 
-<nav>
-  <a href="#">मुख्यपृष्ठ</a>
-  <a href="#">हमारे बारे में</a>
-  <a href="#">ऑफर</a>
-  <a href="#">संपर्क करें</a>
-</nav>
+  <section class="features">
+    <h3>क्यों चुनें <span class="brand-text">AIRBUZZ</span>?</h3>
+    <ul>
+      <li>⚡ तुरंत आईडी बनाएं</li>
+      <li>💸 24x7 तत्काल निकासी</li>
+      <li>🎲 कई कसीनो और क्रिकेट गेम्स</li>
+      <li>📱 उपयोगकर्ता के अनुकूल इंटरफेस</li>
+      <li>🛡 सुरक्षित और भरोसेमंद प्लेटफ़ॉर्म</li>
+    </ul>
+  </section>
 
-<section class="hero">
-  <h2><span class="brand-text">AIRBUZZ</span> – भारत का भरोसेमंद प्लेटफ़ॉर्म</h2>
-  <p><span class="brand-text">AIRBUZZ</span> पर जुड़ें और ऑनलाइन स्लॉट गेम्स और क्रिकेट प्रेडिक्शन से जीतें बंपर इनाम!</p>
-  <p>फास्ट और सुरक्षित गेमिंग अनुभव के साथ तुरंत <span class="brand-text">AIRBUZZ</span> लॉगिन प्राप्त करें।</p>
-  <p><strong>www.<span class="brand-text">airbuzz.in</span></strong> पर अपनी ID बनाएं और आज ही शुरुआत करें।</p>
-  <div class="cta-buttons">
-    <a href="https://wa.me/+919582897268" target="_blank">व्हाट्सएप पर जुड़ें</a>
-  </div>
-</section>
+  <footer>
+    &copy; 2025 AIRBUZZ. सर्वाधिकार सुरक्षित | संपर्क करें: <a href="https://wa.me/+919582897268" style="color:#facc15">व्हाट्सएप</a>
+  </footer>
 
-<section class="section">
-  <h3><span class="brand-text">AIRBUZZ</span> के बारे में</h3>
-  <p><span class="brand-text">AIRBUZZ</span> भारत का अग्रणी ऑनलाइन गेमिंग प्लेटफ़ॉर्म है जहाँ आप क्रिकेट प्रेडिक्शन, स्लॉट गेम्स और कलर प्रेडिक्शन जैसे खेलों का आनंद ले सकते हैं।</p>
-</section>
-
-<section class="section">
-  <h3><span class="brand-text">AIRBUZZ</span> पर कैसिनो गेम्स</h3>
-  <ul class="features">
-    <li>🎰 ऑनलाइन स्लॉट गेम्स</li>
-    <li>🎲 रूले</li>
-    <li>♠️ पोकर</li>
-    <li>🃏 ब्लैकजैक</li>
-    <li>♥️ बैकारेट</li>
-    <li>🎥 लाइव डीलर के साथ लाइव कैसिनो टेबल्स</li>
-  </ul>
-</section>
-
-<section class="section">
-  <h3>बोनस और रिवार्ड्स</h3>
-  <p>🎁 लॉयल्टी बोनस – नियमित खिलाड़ियों को विशेष इनाम</p>
-  <p>📨 रेफरल बोनस – दोस्तों को इनवाइट करें और अधिक कमाएं</p>
-</section>
-
-<section class="section">
-  <h3>पेमेण्ट के तरीके</h3>
-  <ul class="features">
-    <li>🏦 नेट बैंकिंग</li>
-    <li>📲 UPI पेमेंट्स</li>
-    <li>💳 डायरेक्ट बैंक ट्रांसफर</li>
-  </ul>
-</section>
-
-<section class="section">
-  <h3>संपर्क करें - <span class="brand-text">AIRBUZZ</span> सपोर्ट 24/7</h3>
-  <p>अगर आपके कोई सवाल हैं, सहायता चाहिए या सुझाव देना चाहते हैं – <span class="brand-text">AIRBUZZ</span> टीम 24/7 उपलब्ध है।</p>
-  <p>चाहे लॉगिन, डिपॉजिट, गेम एक्सेस हो या अन्य कुछ, हम हमेशा मदद के लिए तैयार हैं।</p>
-</section>
-
-<section class="section" style="background:#0a0a0a; border-top:2px solid #ffcc00;">
-  <h3 style="color:#ffcc00;">डिस्क्लेमर</h3>
-  <p style="color:#ff9999; font-size:16px; max-width:900px; margin:auto;">
-    यह वेबसाइट केवल <strong>18+</strong> उपयोगकर्ताओं के लिए है। यदि आप 
-    <strong>तेलंगाना, ओडिशा, असम, सिक्किम,</strong> या <strong>नागालैंड</strong> से हैं, कृपया वेबसाइट छोड़ दें।
-  </p>
-  <p style="color:#eee; font-size:16px; max-width:900px; margin:auto;">
-    धोखाधड़ी से सावधान रहें — हम केवल WhatsApp के माध्यम से डील करते हैं।
-  </p>
-  <p style="color:#0ff; font-size:16px; max-width:900px; margin:auto;">
-    <strong>हम केवल फैंटेसी स्पोर्ट्स को प्रमोट करते हैं। इसमें कोई रियल मनी शामिल नहीं है।</strong>
-  </p>
-</section>
-
-<a class="floating-whatsapp" href="https://wa.me/+919582897268" target="_blank">💬</a>
-
-<footer>
-  © 2025 <span class="brand-text">AIRBUZZ</span>. सर्वाधिकार सुरक्षित।
-</footer>
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/+919582897268" target="_blank" class="floating-whatsapp-btn">
+    व्हाट्सएप पर जुड़ें
+  </a>
 
 </body>
 </html>
